@@ -33,12 +33,12 @@ def create_contacts(type, value):
             print(random_person)
 
         elif type == 2:
-            random_person = BusinessContact(random_person, job_title=fake.job(), company=fake.company(), business_phone=fake.phone_number())
+            random_person = BusinessContact(name=random_person.name, surname=random_person.surname, phone=random_person.phone, email=random_person.email, job_title=fake.job(), company=fake.company(), business_phone=fake.phone_number())
             print(random_person)
         else:
             print('Choose 1 if you want to create Base Contact or 2 if you want to create Business Contact')
 
-create_contacts(1,10)
+create_contacts(2,3)
     
 
 
