@@ -29,16 +29,16 @@ def create_contacts(type, value):
     for i in range(value):
         random_person = BaseContact(name=fake.first_name(), surname=fake.last_name(), phone=fake.phone_number(), email=fake.ascii_email())
 
-    if type == 1:
-        print(random_person)
+        if type == 1:
+            print(random_person)
 
-    elif type == 2:
-        random_person = BusinessContact(random_person, job_title=fake.job(), company=fake.company(), business_phone=fake.phone_number())
-        print(random_person)
-    else:
-        print('Choose 1 if you want to create Base Contact or 2 if you want to create Business Contact')
+        elif type == 2:
+            random_person = BusinessContact(random_person, job_title=fake.job(), company=fake.company(), business_phone=fake.phone_number())
+            print(random_person)
+        else:
+            print('Choose 1 if you want to create Base Contact or 2 if you want to create Business Contact')
 
-create_contacts(2,10)
+create_contacts(1,10)
     
 
 
